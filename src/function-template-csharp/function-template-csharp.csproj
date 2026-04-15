@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageType>Template</PackageType>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+
+    <IncludeSource>False</IncludeSource>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputPath>$(ArtifactsTmpDir)</OutputPath>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <IsPackable>true</IsPackable>
+    <NoWarn>$(NoWarn);2008;NU5105</NoWarn>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+
+    <PackageId>function-template-csharp</PackageId>
+    <Title>Crossplane Composition Templates</Title>
+    <Authors>Ivan Josipovic</Authors>
+    <Description>C# Crossplane Composition Templates</Description>
+    <language>en-US</language>
+
+    <PackageProjectUrl>https://github.com/IvanJosipovic/function-template-csharp</PackageProjectUrl>
+    <SuppressDependenciesWhenPacking>True</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
