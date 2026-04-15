@@ -1,3 +1,3 @@
 <Solution>
-  <Project Path="function-template-csharp.csproj" />
+  <Project Path="src/function-template-csharp/function-template-csharp.csproj" />
 </Solution>
