@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ivan Josipovic",
+  "classifications": [ "Web" ],
+  "name": "Crossplane Composition",
+  "identity": "Crossplane.Composition",
+  "groupIdentity":"Crossplane.Composition",
+  "shortName": "function-csharp",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "MyFunction",
+  "preferNameDirectory": true
+}
