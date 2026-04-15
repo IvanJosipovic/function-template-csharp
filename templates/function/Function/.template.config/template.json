@@ -4,11 +4,11 @@
   "classifications": [ "Web" ],
   "name": "Crossplane Composition",
   "identity": "Crossplane.Composition",
-  "groupIdentity":"Crossplane.Composition",
+  "groupIdentity": "Crossplane.Composition",
   "shortName": "function-csharp",
   "tags": {
     "language": "C#",
-    "type":"project"
+    "type": "project"
   },
   "sourceName": "MyFunction",
   "preferNameDirectory": true
