@@ -41,7 +41,6 @@ public class RunFunctionService(ILogger<RunFunctionService> logger) : FunctionRu
                 Metadata = new()
                 {
                     Name = observedXR.Metadata.Name.Replace("-", ""),
-                    NamespaceProperty = observedXR.Metadata.NamespaceProperty
                 },
                 Spec = new V1beta1ResourceGroupSpec
                 {
@@ -75,7 +74,6 @@ public class RunFunctionService(ILogger<RunFunctionService> logger) : FunctionRu
                 Metadata = new()
                 {
                     Name = observedXR.Metadata.Name.Replace("-", ""),
-                    NamespaceProperty = observedXR.Metadata.NamespaceProperty
                 },
                 Spec = new()
                 {
@@ -106,7 +104,6 @@ public class RunFunctionService(ILogger<RunFunctionService> logger) : FunctionRu
                 Metadata = new()
                 {
                     Name = observedXR.Metadata.Name.Replace("-", ""),
-                    NamespaceProperty = observedXR.Metadata.NamespaceProperty
                 },
                 Spec = new()
                 {
