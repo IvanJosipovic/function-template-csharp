@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Function.SDK.CSharp" Version="1.0.0-alpha.72" />
-    <PackageReference Include="Function.SDK.CSharp.SourceGenerator" Version="1.0.0-alpha.72" />
+    <PackageReference Include="Function.SDK.CSharp" Version="1.0.0-alpha.73" />
+    <PackageReference Include="Function.SDK.CSharp.SourceGenerator" Version="1.0.0-alpha.73" />
     <PackageReference Include="KubernetesCRDModelGen.SourceGenerator" Version="1.6.15" />
     <PackageReference Include="KubernetesCRDModelGen.Models.azure.upbound.io" Version="1.54.0" />
     <PackageReference Include="KubernetesCRDModelGen.Models.crossplane.io" Version="1.18.0" />
