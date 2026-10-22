@@ -1,6 +1,6 @@
 ARG BUILDPLATFORM=linux/amd64
 
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:10.0-alpine@sha256:c4b29bf368004ad9076c1ab9bc91fb373561e3905b4345637e14e8b8c57e3be8 AS base
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:10.0-alpine@sha256:ecf8dcbaab8ebc4bdfb2322d6fe4217bbb118894310ebb6d53c580874ab4b27d AS base
 WORKDIR /app
 EXPOSE 9443
 
@@ -45,7 +45,7 @@ RUN apk add --upgrade --no-cache \
 USER $APP_UID
 
 # This stage is used to build the service project
-FROM mcr.microsoft.com/dotnet/sdk:10.0-alpine@sha256:620e765fe18186c08399f7aa978f79f04b6bbf0ee1b3b8a91e2d5c9619e59da1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0-alpine@sha256:496914451b05ac5a24592024362ec370c3a2d3c3fe817f864e4aa55c4c194a56 AS build
 ARG BUILD_CONFIGURATION=Release
 ARG VERSION=0.0.1
 WORKDIR /src
